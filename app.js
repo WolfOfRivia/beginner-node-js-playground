@@ -1,12 +1,10 @@
-const {capitalizeWords, makeMoney} = require('./utils');
-const Person = require('./Person');
+import {capitalizeWords, makeMoney} from "./modules/utils.js";
+import Person from "./modules/Person.js";
 
-console.log(capitalizeWords('hello world from node js'));
-console.log(makeMoney(1000));
+console.log(capitalizeWords('hello world'));
 
-const person1 = new Person('John', 30);
+console.log(makeMoney(100));
+
+const person1 = new Person('Lisa', 30);
 
 person1.greet();
-
-// Example on using modules with node.js
-// In your terminal run node app
